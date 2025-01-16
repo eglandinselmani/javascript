@@ -6,20 +6,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form>
+    <form method="POST " onsubmit="return validation ()" >
         <div class="name-container">
             <label id="name_label" for="name">Name:</label>
             <input type="text" name="name" id="name">
             <span id="name_error">Please enter a valid name</span>
         </div>
         <br>
-
-        <button type="submit" name="submit">Send </button>
-    </form>
-
-
-
-    <script src="main.js"> </script>
 
         <div class="age-container">
             <label id="age_label" for="age">Age:</label>
@@ -29,13 +22,20 @@
 
         <div class="city-container">
             <label id="city_label" for="city">City:</label>
-            <select name="city" id="city"></select>
+            <select name="city" id="city">
+            <option value=""></option>
+            <option value="prishtin">prishtin</option>
+            <option value="prishtin">prishtin</option>
+            <option value="prishtin">prishtin</option>
+        </select>
+        <span></span>
         </div>
     
 
 
     <button type="submit" name="submit">Send </button>
     </form>
+    <script src="main.js"> </script>
     
 </body>
 </html>
