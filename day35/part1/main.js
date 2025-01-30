@@ -1,21 +1,21 @@
 var slideIndex= 1;
 
-function showslides(){
+function showSlides(){
     var i;
-    var slides; document.getElementsById ("slide");
+    var slides; document.getElementsByClassName("slide");
 
     for( i=0 ; i<slide.length; i++){
-        slide=[i].style.display ="none";
+        slides=[i].style.display ="none";
     }
-
 
     if(n> slides.length){
         slideIndex=1;
     }
 
     if(n<1){
-        slideIndex = slideIndex
+        slideIndex = slides.length;
     }
+
     slides=[slideIndex-1].style.display = "block";
 }
 
